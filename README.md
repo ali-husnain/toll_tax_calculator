@@ -1,24 +1,28 @@
-For Testing.......
+# For Testing
 
-Step 1: npm install
+### Step 1: npm install
+### Step 2: npm run start
+### Step 3: See screenshots to understand apis working
 
-Step 2: See PNG Images to understand both apis
+&nbsp;
+&nbsp;
+&nbsp;
 
+# Apis Detail:
 
-Create Two Apis
+## 1. POST: http://localhost:8001/api/toll/vehicle-enter
 
-1. POST: http://localhost:8001/api/toll/add-entry
-
-Payload: Json type
-
+### Payload: JSON
+```
 {
     "interchange": "Zero Point",
     "number_plate": "GAE-324",
     "date_time": "Sat, 21 May 2022 19:55:47 GMT"
 }
+```
 
-Response: json
-
+### Response: JSON
+```
 {
     "code": 200,
     "status": "success",
@@ -30,21 +34,25 @@ Response: json
         "date_time": "Sat, 21 May 2022 17:55:47 GMT"
     }
 }
+```
+&nbsp;
+&nbsp;
+&nbsp;
+
+## 2. POST: http://localhost:8001/api/toll/vehicle-exit/:entryId
 
 
-2. POST: http://localhost:8001/api/toll/calculate-tax/:entryId
-
-
-Payload: Json type
-
+### Payload: JSON
+```
 {
     "interchange": "Raiwand Interchange",
     "number_plate": "GAE-324",
     "date_time": "Sat, 21 May 2022 19:55:47 GMT"
 }
+```
 
-Response: json
-
+### Response: JSON
+```
 {
     "code": 200,
     "status": "success",
@@ -57,3 +65,13 @@ Response: json
         "total_tax": 28.7
     }
 }
+```
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+# Screenshots:
+![ScreenShot](/screenshots/vehicle-enter.png)
+
+![ScreenShot](/screenshots/vehicle-exit.png)
