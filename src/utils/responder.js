@@ -1,8 +1,8 @@
 
-let Responder = {
+const Responder = {
 
   sendResponse: (response, statusCode, status, data, message) => {
-    let returnData = {
+    const returnData = {
         code: statusCode,
         status: status,
         message: message,

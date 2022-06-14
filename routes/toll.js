@@ -3,12 +3,12 @@ const router = express.Router();
 
 const tollController = require('../src/toll/toll_controller');
 
-router.post('/add-entry', function (request, response, next) {
-  tollController.createEntryRecord(request, response, next);
+router.post('/vehicle-enter', function (request, response, next) {
+  tollController.addVehicleEntry(request, response, next);
 });
 
-router.post('/calculate-tax/:entryId', function (request, response, next) {
-  tollController.calculateVehicleTax(request, response, next);
+router.post('/vehicle-exit/:entryId', function (request, response, next) {
+  tollController.exitVehicleWithTax(request, response, next);
 });
 
 
