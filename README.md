@@ -8,6 +8,17 @@ Lahore, like the ring road. Tolls are a tax calculated by the agency to keep the
 and therefore all vehicles that enter the ring road have to pay a toll tax.
 ```
 
+###INTERCHANGESNAMEANDGAP
+```
+Zero Point: 0KM,
+NS Interchange: 5KM,
+Ph4 Interchange: 10KM,
+Ferozpur Interchange: 17KM,
+Lake City Interchange: 24KM,
+Raiwand Interchange: 29KM,
+Bahria Interchange: 34KM
+```
+
 ### Functionality
 ```
 Tolls are calculated based on the following:
